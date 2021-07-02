@@ -1,0 +1,680 @@
+! Title: Custom filter list
+! Description: Custom filters optimized for uBlock Origin, to improve
+!          protection vs annoyances & trackers.
+! Expires: 1 day
+! License: https://creativecommons.org/licenses/by/3.0/
+! Homepage: https://github.com/decisoft/recursos-privacidad
+! Forums: https://github.com/decisoft/recursos-privacidad/issues
+
+! General protection vs trackers and analytics !
+
+! Remove trackers from URLs 
+! From https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
+$removeparam=asgtbndr
+$removeparam=guccounter
+$removeparam=guce_referrer
+$removeparam=guce_referrer_sig
+$removeparam=_openstat
+$removeparam=action_object_map
+$removeparam=action_ref_map
+$removeparam=action_type_map
+$removeparam=fb_action_ids
+$removeparam=fb_action_types
+$removeparam=fb_comment_id
+$removeparam=fb_ref
+$removeparam=fb_source
+$removeparam=fbclid
+$removeparam=gclid
+$removeparam=utm_campaign
+$removeparam=utm_channel
+$removeparam=utm_cid
+$removeparam=utm_content
+$removeparam=utm_medium
+$removeparam=utm_name
+$removeparam=utm_place
+$removeparam=utm_pubreferrer
+$removeparam=utm_reader
+$removeparam=utm_referrer
+$removeparam=utm_social
+$removeparam=utm_social-type
+$removeparam=utm_source
+$removeparam=utm_swu
+$removeparam=utm_term
+$removeparam=utm_userid
+$removeparam=utm_viz_id
+$removeparam=yclid
+
+! The rules for specific sites
+||visit.digidip.net^$removeparam=/^(ppref|ref|pid)=/
+||ad.admitad.com/g/$removeparam=subid
+||mvideo.ru^$removeparam=/^(_requestid|reff)=/
+||nytimes.com^$removeparam=impression_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/83138
+||app.mi.com/download/*?id=$removeparam=ref
+||app.mi.com/download/*?id=$removeparam=nonce
+||app.mi.com/download/*?id=$removeparam=appClientId
+||app.mi.com/download/*?id=$removeparam=appSignature
+! https://github.com/AdguardTeam/AdguardFilters/issues/69722
+||digikey.com^$removeparam=/^mkt_tok/
+||digikey.com^$removeparam=/^utm_cid/
+! https://github.com/AdguardTeam/AdguardFilters/issues/83136
+||mp.weixin.qq.com^$removeparam=chksm
+||mp.weixin.qq.com^$removeparam=key
+||mp.weixin.qq.com^$removeparam=uin
+||mp.weixin.qq.com^$removeparam=devicetype
+||mp.weixin.qq.com^$removeparam=exportkey
+! Prevent tracking when request is unblocked
+||pixel.adsafeprotected.com/services/pub?$removeparam=slot
+||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId
+||pixel.adsafeprotected.com/services/pub?$removeparam=anId
+||pixel.adsafeprotected.com/services/pub?$removeparam=wr
+||pixel.adsafeprotected.com/services/pub?$removeparam=sr
+||pixel.adsafeprotected.com/services/pub?$removeparam=url
+
+! Fixing filtering errors
+! kotaku.com - "See all replies" button broken
+@@||kotaku.com/embed/comments$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/78392
+@@||lanacion.com.ar/*module$removeparam=utm_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/69031 [Stealth Mode - Strip URLs from tracking parameters]
+@@||t.send.vt.edu/r/?id=$removeparam=utm_source
+@@||t.send.vt.edu/r/?id=$removeparam=utm_medium
+@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
+! https://github.com/AdguardTeam/AdguardFilters/issues/52925
+@@||auto-swiat.pl/*&srcc=ucs$removeparam
+@@||komputerswiat.pl/*&srcc=ucs$removeparam
+@@||noizz.pl/*&srcc=ucs$removeparam
+@@||plejada.pl/*&srcc=ucs$removeparam
+@@||medonet.pl/*&srcc=ucs$removeparam
+@@||businessinsider.com.pl/*&srcc=ucs$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/63522
+@@||onet.pl/?utm_source=$removeparam
+
+! Customs !
+$removeparam=/^ssm=/
+$removeparam=/^desktop=/
+$removeparam=/^segmentId=/
+$removeparam=/^linkId=/
+$removeparam=/^sfnsn=/
+$removeparam=/^cid=/
+$removeparam=/^_ga/
+
+
+! Block trackers !
+! Added from https://d3ward.github.io/toolz/src/adblock
+||widgets.pinterest.com^
+||analytics.pinterest.com^
+||trk.pinterest.com^
+||appmetrica.yandex.com^
+||yandexadexchange.net^
+||analytics.mobile.yandex.net^
+||extmaps-api.yandex.net^
+||adsdk.yandex.ru^
+||insights.samsung.com^
+||analytics-api.samsunghealthcn.com^
+||analytics.samsungknox.com^
+||samsungadhub.com^
+||bigdata.ssp.samsung.com^
+||ad.samsungadhub.com^
+||data.mistat.xiaomi.com^
+||data.mistat.intl.xiaomi.com^
+||data.mistat.india.xiaomi.com^
+||data.mistat.rus.xiaomi.com^
+||logservice.hicloud.com^
+||logservice1.hicloud.com^
+||logbak.hicloud.com^
+||metrics1.data.hicloud.com^
+||metrics2.data.hicloud.com^
+||metrics3.data.hicloud.com^
+||metrics4.data.hicloud.com^
+||metrics5.data.hicloud.com^
+||metrics.data.hicloud.com^
+||metrics-dra.dt.hicloud.com^
+||trackingshipment.apple.com^
+||supportmetrics.apple.com^
+||trackingshipment.isg-apple.com.akadns.net^
+||metrics.icloud.com^
+||metrics.mzstatic.com^
+||analytics.pointdrive.linkedin.com^
+||analytics.facebook.com^
+||stats.redditmedia.com^
+
+! Google consent, "before you continue"
+google.*##^script:has-text(consentCookiePayload)
+
+! Disable Google translate www.aliprice.com
+aliprice.com##.skiptranslate
+aliprice.com##body:style(top: 0px !important)
+
+! Fix blank space elpais.com
+elpais.com##.mldb1-wrapper
+
+! Disable cookie banner 
+||sdk.privacy-center.org^$script,domain=allocine.fr|corrieredellosport.it|franceculture.fr|franceinter.fr|francetvinfo.fr|gamestar.de|mundodeportivo.com|tuttosport.com,important
+
+! Disabling cookie banner breaks videos
+! ||sdk.privacy-center.org^$script,domain=ivoox.com|lavanguardia.com|,important
+
+! Disable cookie banner theverge.com
+theverge.com##.m-privacy-consent,important
+
+! Disable newsletter banner lidl.es
+lidl.es##.newsletter-banner--opened.js-newsletter-banner.newsletter-banner
+
+! Disable tour guide Blackbooard Collaborate // breaks chat
+! eu.bbcollab.com###announcement-modal-page-wrap
+
+! Disable annoyances and blank spaces elespanol.com
+elespanol.com###gallerynews_footer
+elespanol.com##.article-inline
+elespanol.com##.article-inline_final
+
+! Fix blank spaces elconfidencial.com
+elconfidencial.com##.skinRevenue__wrapper--center.skinRevenue__wrapper > .revUnit--placeholder.revUnit
+elconfidencial.com###roba_a28df9ac-a1bd-11eb-89ff-005056012d97
+elconfidencial.com###roba_a28df2d6-a1bd-11eb-bb75-005056012d97
+elconfidencial.com###boton_a28deaa2-a1bd-11eb-a41c-005056012d97
+elconfidencial.com###roba_a28dd5da-a1bd-11eb-8fe0-005056012d97
+
+! Fix blank space interflora.es
+interflora.es##.block-busca-ramo
+
+! Hide ads
+noticiasparamunicipios.com##.notic-getafe-aleatorio_2
+noticiasparamunicipios.com##.notic-adlabel
+
+! Hide ads
+##.advads_ad_widget-1
+##.advads_ad_widget-6
+##.advads_ad_widget-7
+##.advads_ad_widget-8
+##.advads_ad_widget-9
+##.pubbox2
+
+! Disable covid stats banner
+##.coronabar-container
+
+! Disable cookie banner https://www.getafealdia.com
+getafealdia.com###cookies
+
+! Fix blank space 20minutos.es
+20minutos.es##.outbrain-sidebar > div
+20minutos.es###m25-24-26 > .module.free-content
+20minutos.es##.module-lined.module-coupons.module
+
+! Annoyance
+womensecret.com##.ui-front.ui-widget-overlay
+womensecret.com##.c10__newsletter-dialog--contentWrapper
+
+! Annoyance
+shop.mango.com##._1_Q4F._2IQOD
+
+! Blank space
+elperiodico.com##.minHeightLong
+
+! Whitelist cookie banner (breaks scrolling)
+panticosa.com#@##bs-gdpr-cookies-modal
+
+! 2021-04-21 https://www.eldia.es
+eldia.es##.commercial-up-full__wrapper > .only-desktop
+eldia.es##.commercial-up-full__wrapper
+eldia.es##.no-baldomero.hide-mobile.col-xs-12.col-5
+eldia.es##.no-baldomero.hide-mobile.col-4.col-xs-12
+eldia.es##.no-baldomero.no-mobile.col-4.col-xs-12
+eldia.es###pc-div-gpt-ad_html_1000036
+||motor-cdn.prensaiberica.es/widget?portal=ed&pagina=portada&v1$subdocument
+
+! 2021-04-21 https://diariodeavisos.elespanol.com
+diariodeavisos.elespanol.com##div.qsr > .row
+diariodeavisos.elespanol.com##.canariascom
+diariodeavisos.elespanol.com##div:nth-of-type(6)
+
+! Block ads
+diariodesanse.com##.ai_widget
+diariodesanse.com##.code-block-20
+
+! 2021-04-21 https://alcorconhoy.com
+alcorconhoy.com##.td-pb-span6.tdc-column.vc_column_container.wpb_column.tdi_15.vc_column
+alcorconhoy.com##.td-fix-index.td_block_template_1.td-pb-border-top.tdi_47.td_block_title.td_block_wrap > .td-block-title.block-title
+
+! 2021-04-21 https://joindeleteme.com
+joindeleteme.com##.widget_custom_html.widget.widget_text
+||sitejabber.com^$domain=joindeleteme.com
+
+! 2021-04-21 https://www.infobae.com
+infobae.com##.navbar-ad-container
+infobae.com##body:style(top: 0px !important)
+
+! 2021-04-21 https://www.elagoradiario.com
+elagoradiario.com##.delayedPopupWindow
+
+! 2021-04-21 https://www.abc.es
+abc.es##.patrocinados.caja-portada > .zona-tres-temas.fila > .col4.row1.start-col9.start-row1
+||oferplan.abc.es^
+||static2.abc.es/assets/2.0.146/img/logo-oferplan-2017.svg
+abc.es##.publicidades.caja-portada
+abc.es##.mega-inferior
+
+! 2021-04-21 https://www.larazon.es
+larazon.es##.content__block--is-billboard.content__block > .content__ad
+larazon.es##.ad__wrapper_alayans > .bg-placeholder.right1.all.ad > .henneoHB_right.henneoHB
+larazon.es##.section__news--is-3-col-3-col-publicidad-7-noticias.section__news > .ad-parent-class.section__news--is-ad > .bg-placeholder.right1.all.ad > .henneoHB_right.henneoHB
+larazon.es##.bg-placeholder.cintillo1.all.ad
+larazon.es##.bg-placeholder.cintillo2.all.ad
+larazon.es##.bg-placeholder.cintillo3.all.ad
+larazon.es##.bg-placeholder.cintillo4.all.ad
+larazon.es##.bg-placeholder.cintillo5.all.ad
+larazon.es##.native1.henneoHB
+larazon.es##.henneoHB_right.henneoHB
+larazon.es##.section__news--is-3-col-3-col-publicidad-5-noticias.section__news > .ad-parent-class.section__news--is-ad
+larazon.es##.section__news--is-6-col-2x3-col-publicidad.section__news > .ad-parent-class.section__news--is-ad
+larazon.es##.section__news--is-6-col-3x2-col-publicidad.section__news > .ad-parent-class.section__news--is-ad
+larazon.es##.bg-placeholder.right1.all.ad
+larazon.es##.sunmedia1.henneoHB
+larazon.es##.bg-placeholder.sunmedia1.all.ad
+larazon.es##.bg-placeholder.right2.all.ad
+larazon.es##.roba_finarticulo.henneoHB
+larazon.es##.rfc-item.ads--is-footer.ads
+
+! 2021-04-21 https://www.amazon.es
+amazon.es##.nav-flyout.nav-signin-tt
+
+! 2021-04-22 https://pixabay.com
+pixabay.com##.carbon-ad
+
+! 2021-04-22 https://twitter.com
+twitter.com##.r-10x3wzx.r-14lw9ot.css-1dbjc4n
+
+! 2021-04-22 https://ctxt.es
+ctxt.es##.articulo__sidebar
+
+! 2021-04-22 https://www.elespanol.com
+elespanol.com##.comments-nav
+
+! 2021-04-23 https://www.elespectador.com
+elespectador.com##.BannerHeader-adTopHome_noTomaHome.BannerHeader-adTopHome
+elespectador.com##body:style(top: 0px !important)
+
+! 2021-04-23 https://www.telesurtv.net
+telesurtv.net##.contentBolFlot
+
+! 2021-04-23 https://www.freim.tv
+freim.tv##vue-widget
+freim.tv##p:nth-of-type(2)
+freim.tv##h3:nth-of-type(1)
+
+! 2021-04-23 https://okdiario.com
+okdiario.com##aside.ad-block:nth-of-type(2)
+
+! 2021-04-23 https://www.europapress.es
+europapress.es###colLateral
+europapress.es###colLateral2
+europapress.es##.columna3.columns.four
+
+! 2021-04-23 https://telocuentonews.com
+telocuentonews.com##.active.more-stories-text-4.right.more-stories
+
+! 2021-04-23 https://www.buzzfeednews.com
+buzzfeednews.com###mod-subbuzz-text-11 > p
+
+! 2021-04-23 https://www.independentespanol.com
+independentespanol.com##.wIkUb.sc-qQYBZ.kBPJSk.sc-pscky
+independentespanol.com##.gtZHgp.sc-pIvhh
+
+! 2021-04-23 https://www.abc.es
+abc.es##.zona-inferior-articulo
+||static1.abc.es/assets/latest/img/logo-oferplan-2017.svg
+abc.es##.patrocinados.caja-portada
+
+! 2021-04-23 https://www.estosdias.com.mx
+||www.estosdias.com.mx/wp-content/uploads/2020/10/banner3.jpg$image
+
+! 2021-04-23 https://www.jornada.com.mx
+jornada.com.mx###adv_top_left
+jornada.com.mx###Right1
+jornada.com.mx###taboolacoderightsc
+jornada.com.mx###adv-float-top-2-obj
+jornada.com.mx###Right2
+
+! 2021-04-23 https://actualidad.rt.com
+actualidad.rt.com##.top-banners-with-mobile.TopBanner-root
+
+! 2021-04-23 https://www.eldiariodechihuahua.mx
+eldiariodechihuahua.mx##div.pading_buttom_15.publicidad_ads.rcx12:nth-of-type(1)
+eldiariodechihuahua.mx##div.publicidad_ads.rcx12:nth-of-type(3)
+eldiariodechihuahua.mx##div.pading_buttom_15.publicidad_ads.rcx12:nth-of-type(2)
+
+! 2021-04-23 https://www.estosdias.com.mx
+estosdias.com.mx##.show-check-also.check-also-right.post-listing
+
+! 2021-04-23 https://www.jornada.com.mx
+jornada.com.mx###adv_bottom
+jornada.com.mx##.content-pub-bottom-fix
+
+! 2021-04-23 https://www.excelsior.com.mx
+excelsior.com.mx##.imx-title-imx-ads
+excelsior.com.mx##.banner--native-node-excelsior
+
+! 2021-04-23 https://www.infobae.com
+infobae.com##.pointer.align_items_center.justify_center.display_flex.fixed.homeButton
+infobae.com##.width_full.tablet-12.desktop-4.widescreen-4.col.\|.right_rail > .dktH10.mobH10.nd-spa
+
+! 2021-04-23 https://elpais.com
+elpais.com##.border_1.border_top.margin_bottom_half.\|.w_h
+
+nationalgeographic.com##+js(aeld, scroll)
+
+! 2021-04-24 https://www.laverdad.es
+laverdad.es##.voc-oferplan
+laverdad.es##.voc-title-sponsored
+laverdad.es##.voc-grid--tablet-like-mobile.voc-grid--AB-C.voc-grid
+||oferplan.laverdad.es^
+
+! 2021-04-24 https://www.laopiniondemurcia.es
+laopiniondemurcia.es##.commercial-up-full__wrapper
+laopiniondemurcia.es##.no-baldomero.hide-mobile.col-xs-12.col-5
+laopiniondemurcia.es##.no-baldomero.hide-mobile.col-4.col-xs-12
+laopiniondemurcia.es##.no-baldomero.no-mobile.col-4.col-xs-12
+laopiniondemurcia.es###pc-div-gpt-ad_html_1000036
+laopiniondemurcia.es##div.no-baldomero.sidebar--sticky__space
+
+! 2021-04-24 https://www.telecinco.es
+telecinco.es##.background_color_zeta.ads__ad_container_billboard-3C4O.ads__ad_container-20bh
+telecinco.es###megaSuperior_multisite
+telecinco.es##.background_color_zeta.directo__sidebarMobile-2Dr6
+telecinco.es##.article__alone-1_JJ.article__first_doblerroba_ART-29xd
+
+! 2021-04-25 https://www.elindependiente.com
+elindependiente.com##.wrapper.sub_header
+
+! 2021-04-25 https://www.vozpopuli.com
+vozpopuli.com##.single.home_1_ad.wrapper
+vozpopuli.com##.mpu1.before_widget.sf_sidebar.ad-container
+vozpopuli.com##.mpu2.before_widget.sf_sidebar.ad-container
+vozpopuli.com##.mpu3.before_widget.sf_sidebar.ad-container
+vozpopuli.com##.mpu4.before_widget.sf_sidebar.ad-container
+vozpopuli.com##.home_1_ad.wrapper
+vozpopuli.com###v_espana_mega_1
+vozpopuli.com##.after_header.ad-container
+
+! 2021-04-26 https://www.elconfidencial.com
+elconfidencial.com##div.articleAside__module--isSticky.articleAside__module
+
+! 2021-04-26 https://www.ionos.es
+||ionos.es/digitalguide/typo3conf/ext/ciso_digitalguide/Resources/Public/Icons/ic_close_black_24dp_2x.png
+||ionos.es/digitalguide/fileadmin/user_upload/Stage_Domain.png
+ionos.es###bio_ep
+ionos.es###bio_ep_bg
+
+! 2021-04-26 https://www.tiktok.com
+tiktok.com##.guide-login-banner.jsx-319528883
+tiktok.com##.show.jsx-805738158
+
+! 2021-04-26 https://www.lavanguardia.com
+lavanguardia.com##aside.sticky-box.module-box-ads
+
+! 2021-04-27 https://sitgesfilmfestival.com
+sitgesfilmfestival.com##.ajs-dimmer
+sitgesfilmfestival.com##.ajs-dialog
+
+! 2021-04-27 https://dircomfidencial.com
+dircomfidencial.com##.code-block-22.code-block
+dircomfidencial.com##.code-block-16.code-block
+dircomfidencial.com##.code-block-17.code-block
+
+! 2021-04-27 https://www.lainformacion.com
+lainformacion.com##div.lane-750.axds-lane
+
+! 2021-04-27 https://es.gizmodo.com
+es.gizmodo.com##.js_sticky-footer.eRJXHT.sc-1bdg1q0-0
+
+! 2021-04-27 https://friends.fandom.com
+##.WikiaBarWrapper
+
+! 2021-04-28 https://www.theguardian.com
+theguardian.com##.css-9aekbr
+
+! 2021-04-28 https://www.revistagq.com
+revistagq.com##.cns--FUEL_AD.ad.fYLbxZ.sc-bdVaJa
+revistagq.com##.bwbpQY.FourUpCol-hk6ts4-0.Col-sc-8fdd29-3.dcdMpn.BaseCol-sc-8fdd29-2
+
+! 2021-04-29 https://es.aliexpress.com
+es.aliexpress.com##.drogue-poplayer-modal
+
+! 2021-04-29 https://www.letras.com
+letras.com##.cnt-space-top
+
+! 2021-04-30 https://www.publico.es
+publico.es##.megabanner-left.pb-ads
+publico.es##.pb-ads-count.henneoHB.js-ads-fixed
+
+##.sticky.bottom-strip.bg-white.affix
+
+! 2021-04-30 https://www.meteoblue.com
+meteoblue.com##.gdpr_message
+
+! 2021-04-30 https://www.scoopwhoop.com
+scoopwhoop.com###da-top
+
+! 2021-04-30 https://diariodeavisos.elespanol.com
+diariodeavisos.elespanol.com##.padding-JC.ad660
+
+ethic.es##.banner-image.banner-track
+
+! 2021-05-02 https://www.muylinux.com
+muylinux.com##.et_bloom_success_action.et_bloom_flyin_bottom_inline.et_flyin_1_field.et_bloom_animation_slideup.et_bloom_form_text_light.et_bloom_rounded.et_bloom_border_position_full.et_bloom_border_solid.et_bloom_with_border.carrot_edge.with_edge.et_bloom_form_bottom.et_bloom_form_container
+
+! 2021-05-03 https://ethic.es
+ethic.es##article.small.item:nth-of-type(2)
+
+! 2021-05-03 https://larepublica.pe
+larepublica.pe##.aside-ads-top
+
+! 2021-05-04 https://www.eldia.es
+eldia.es##div.no-baldomero.sidebar--sticky__space
+
+! 2021-05-04 https://www.forbes.com
+forbes.com##fbs-ad
+forbes.com##p:nth-of-type(11)
+
+! 2021-05-05 https://www.laptopmag.com
+laptopmag.com##.mobile-leaderboard-320-50
+
+! 2021-05-06 https://lavanguardia.com
+lavanguardia.com##.container-fluid
+lavanguardia.com##div.container-freehtml.full.container
+
+! 2021-05-06 https://datoweb.com
+datoweb.com##.cookies
+
+!2021-05-07 https://megamedia.es
+megamedia.es#@##cookie_hdr_showagain
+
+! 2021-05-07 https://ciberpatrulla.com
+ciberpatrulla.com###cp_popup_id_18559 > .cpro-overlay
+
+! 2021-05-07 https://libreriaproteo.com
+libreriaproteo.com#@##modalCookies
+
+! 2021-05-08 https://www.compromisoempresarial.com
+www.compromisoempresarial.com##.banner-members
+
+! 2021-05-08 Malware and spyware
+||nav-goo.com^
+
+! 2021-05-09 https://www.eleconomista.es
+eleconomista.es##.sticky_bottom_banner.b960n
+
+! 2021-05-09 https://es.greenpeace.org
+es.greenpeace.org###cookiePromptCenter
+es.greenpeace.org##.show.fade.modal-backdrop
+
+! 2021-05-08 https://www.slidescarnival.com
+slidescarnival.com##article.type-post.post:nth-of-type(2)
+slidescarnival.com##article.type-post.post:nth-of-type(9)
+slidescarnival.com##article.type-post.post:nth-of-type(13)
+
+! 2021-05-09 https://www.elindependiente.com
+elindependiente.com###right2
+elindependiente.com###right3
+
+! 2021-05-09 https://www.lne.es
+lne.es##.commercial-up-full__wrapper
+
+! 2021-05-11 https://blog.oxfamintermon.org
+blog.oxfamintermon.org##.sgpb-popup-overlay.sgpb-popup-overlay-25287.sgpb-theme-2-overlay
+||blog.oxfamintermon.org/wp-content/uploads/2021/02/POP-UP-BLOGIQS_ParaUnebox.png$image
+blog.oxfamintermon.org##.sgpb-popup-dialog-main-div-theme-wrapper-2
+
+! 2021-05-11 https://www.lainformacion.com
+lainformacion.com###axds-Top
+
+! 2021-05-11 https://autosolar.es
+autosolar.es##.cookie-configuration
+
+! 2021-05-11 https://www.abc.es
+abc.es##.in.test-window.ev-open-modal-notifier-all.ng-isolate-scope.fade.show.modal
+abc.es##.in.fade.modal-backdrop
+
+! 2021-05-12 https://slidesgo.com
+||slidesgo.com/ssmas/fi.html$subdocument
+slidesgo.com##.relative.border-gray-250.border.mb-6
+
+! 2021-05-13 https://www.20minutos.es
+20minutos.es###m35-34-36 > .module.free-content
+
+! 2021-05-14 https://www.logitravel.com Unbreak
+@@||cdn.logitravel.com/resources/javascript/home/cookies/lib/oil.1.3.5-RELEASE.min.js?v=1.0$script,domain=www.logitravel.com
+logitravel.com#@#.as-oil
+logitravel.com#@#.as-oil-content-overlay
+logitravel.com#@#.as-oil[data-qa="oil-Layer"]
+logitravel.com##.nav-middle__modal
+
+! 2021-05-16 https://bintercanarias.com 
+bintercanarias.com#@##cookiesPolicy
+bintercanarias.com#@#.ui-widget[aria-labelledby*="cookie"]
+
+! 2021-05-14 https://www.viajeroscallejeros.com
+viajeroscallejeros.com##.widget-area.sidebar-primary.sidebar
+
+! 2021-05-18 https://www.npr.org
+npr.org##.global-modal__overlay
+npr.org##.callout--donation-embedded.callout--donation.callout
+
+! 2021-05-19 https://www.lanacion.com.ar
+www.lanacion.com.ar##.--cabezal_dsk.mod-banner
+
+! 2021-05-19 https://iberiaexpress.com Unbreak
+iberiaexpress.com#@#.cookies-modal:not(body):not(html)
+
+! 2021-05-21 https://www.motopoliza.com
+motopoliza.com###popup
+motopoliza.com###capaAvisoAbsurdoCookies
+
+! 2021-05-21 https://www.kayak.es
+kayak.es###rejr-dialog > .viewport
+kayak.es###rejr-dialog > .modalBackground
+
+! 2021-05-23 https://tradingdraft.com
+tradingdraft.com##.top_desktop_placeholder
+tradingdraft.com##.divider
+tradingdraft.com###screen-1 > .bottom_desktop_placeholder
+tradingdraft.com###screen-3 > .bottom_desktop_placeholder
+tradingdraft.com###screen-2 > .bottom_desktop_placeholder
+tradingdraft.com###screen-4 > .bottom_desktop_placeholder
+tradingdraft.com###screen-5 > .bottom_desktop_placeholder
+tradingdraft.com###screen-6 > .bottom_desktop_placeholder
+tradingdraft.com###screen-7 > .bottom_desktop_placeholder
+tradingdraft.com###screen-8 > .bottom_desktop_placeholder
+tradingdraft.com###screen-9 > .bottom_desktop_placeholder
+tradingdraft.com###screen-10 > .bottom_desktop_placeholder
+tradingdraft.com###screen-11 > .bottom_desktop_placeholder
+tradingdraft.com###screen-12 > .bottom_desktop_placeholder
+tradingdraft.com###screen-13 > .bottom_desktop_placeholder
+tradingdraft.com###screen-14 > .bottom_desktop_placeholder
+tradingdraft.com###screen-15 > .bottom_desktop_placeholder
+tradingdraft.com###screen-16 > .bottom_desktop_placeholder
+tradingdraft.com###screen-17 > .bottom_desktop_placeholder
+tradingdraft.com###screen-18 > .bottom_desktop_placeholder
+tradingdraft.com###screen-19 > .bottom_desktop_placeholder
+tradingdraft.com###screen-20 > .bottom_desktop_placeholder
+tradingdraft.com###screen-21 > .bottom_desktop_placeholder
+tradingdraft.com###screen-22 > .bottom_desktop_placeholder
+tradingdraft.com###screen-23 > .bottom_desktop_placeholder
+tradingdraft.com###screen-24 > .bottom_desktop_placeholder
+tradingdraft.com###screen-25 > .bottom_desktop_placeholder
+tradingdraft.com###screen-26 > .bottom_desktop_placeholder
+tradingdraft.com###screen-27 > .bottom_desktop_placeholder
+tradingdraft.com###screen-28 > .bottom_desktop_placeholder
+tradingdraft.com###screen-29 > .bottom_desktop_placeholder
+tradingdraft.com###screen-30 > .bottom_desktop_placeholder
+tradingdraft.com###screen-31 > .bottom_desktop_placeholder
+tradingdraft.com###screen-32 > .bottom_desktop_placeholder
+tradingdraft.com###screen-33 > .bottom_desktop_placeholder
+tradingdraft.com###screen-34 > .bottom_desktop_placeholder
+tradingdraft.com###screen-35 > .bottom_desktop_placeholder
+tradingdraft.com###screen-36 > .bottom_desktop_placeholder
+tradingdraft.com###screen-37 > .bottom_desktop_placeholder
+tradingdraft.com###screen-38 > .bottom_desktop_placeholder
+tradingdraft.com###screen-39 > .bottom_desktop_placeholder
+tradingdraft.com###screen-40 > .bottom_desktop_placeholder
+tradingdraft.com###screen-41 > .bottom_desktop_placeholder
+tradingdraft.com###screen-42 > .bottom_desktop_placeholder
+tradingdraft.com###screen-42 > .bottom_desktop_placeholder
+tradingdraft.com###screen-43 > .bottom_desktop_placeholder
+tradingdraft.com###screen-44 > .bottom_desktop_placeholder
+tradingdraft.com###screen-45 > .bottom_desktop_placeholder
+tradingdraft.com###screen-46 > .bottom_desktop_placeholder
+tradingdraft.com###screen-47 > .bottom_desktop_placeholder
+tradingdraft.com###screen-48 > .bottom_desktop_placeholder
+tradingdraft.com###screen-49 > .bottom_desktop_placeholder
+tradingdraft.com###screen-50 > .bottom_desktop_placeholder
+tradingdraft.com###screen-51 > .bottom_desktop_placeholder
+tradingdraft.com###screen-52 > .bottom_desktop_placeholder
+tradingdraft.com###screen-53 > .bottom_desktop_placeholder
+tradingdraft.com###screen-54 > .bottom_desktop_placeholder
+
+! 2021-05-23 https://www.sport.es
+www.sport.es##.minHeightLong.following-ad-container
+
+! 2021-05-23 https://kaosenlared.net
+kaosenlared.net##.uobgp-clearfix.uobgp-column-1.uobgp-align-center.uobgp-float-center.uobgp-post-top.uobgp
+
+! 2021-05-24 https://www.canaryfly.es
+www.canaryfly.es##.ui-front.ui-widget-overlay
+hipertextual.com##.scaip.scaip-1
+hipertextual.com##.scaip.scaip-2
+hipertextual.com##.scaip.scaip-3
+
+! 2021-05-25 https://www.indiatoday.in
+indiatoday.in##.story-recommended-chunk
+
+! 2021-05-25 https://jazztel.com
+jazztel.com##.contenedor_llama
+jazztel.com##.contenedor_principal.d-none.d-md-flex.row
+
+! 2021-05-27 https://www.politicaexterior.com
+www.politicaexterior.com##.floor-ad
+
+! 2021-05-28 https://www.zdnet.com
+www.zdnet.com##.ot-fade-in.onetrust-pc-dark-filter
+
+! Unbreak
+dailymotion.com#@#div[class*="TCF2Banner"], div[class*="CookieGdpr"], div[class*="CookiePopup"]
+dailymotion.com#@#div[class^="TCF2Banner__container__"]
+
+! 2021-05-30 https://www.marca.com
+marca.com##div.ue-l-article--grow.ue-l-article__secondary-column-item:nth-of-type(2)
+
+! 2021-05-31 https://www.elmundo.es
+elmundo.es##.ue-c-subscription-ad
+
+! 2021-06-01 https://www.wundertech.net
+wundertech.net##.code-block-1.code-block
+wundertech.net##.elementor-widget-heading.elementor-widget.elementor-element-c77be8e.elementor-element > .elementor-widget-container > .code-block-3.code-block
+
+! 2021-06-04 https://rootear.com
+rootear.com###facebook-flyer-2
+
+! 2021-06-05 https://comiviajeros.com
+comiviajeros.com###mc_sticky_comiviajeros
