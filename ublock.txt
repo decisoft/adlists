@@ -3,8 +3,8 @@
 !          protection vs annoyances & trackers.
 ! Expires: 1 day
 ! License: https://creativecommons.org/licenses/by/3.0/
-! Homepage: https://github.com/decisoft/recursos-privacidad
-! Forums: https://github.com/decisoft/recursos-privacidad/issues
+! Homepage: https://github.com/decisoft/adlists
+! Forums: https://github.com/decisoft/adlists/issues
 
 ! General protection vs trackers and analytics !
 
