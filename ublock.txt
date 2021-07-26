@@ -296,6 +296,8 @@ $removeparam=/^linkId=/
 $removeparam=/^sfnsn=/
 $removeparam=/^cid=/
 $removeparam=/^_ga/
+||aliexpress.com^$removeparam=/^algo_pvid=/
+||aliexpress.com^$removeparam=/^algo_exp_id=/
 
 
 ! Block trackers !
@@ -876,3 +878,4 @@ rootear.com###facebook-flyer-2
 
 ! 2021-06-05 https://comiviajeros.com
 comiviajeros.com###mc_sticky_comiviajeros
+##.drogue-poplayer-modal
