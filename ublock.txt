@@ -879,3 +879,22 @@ rootear.com###facebook-flyer-2
 ! 2021-06-05 https://comiviajeros.com
 comiviajeros.com###mc_sticky_comiviajeros
 ##.drogue-poplayer-modal
+
+! 2021-06-22 https://www.lancelotdigital.com
+www.lancelotdigital.com##p:nth-of-type(13)
+www.lancelotdigital.com##p:nth-of-type(10)
+
+! 2021-06-22 https://elpais.com
+elpais.com###ctn_classified_list_5 > .padding.background_gray_ultra_light.container_column_mobile.row.desktop_12.tablet_8.mobile_4.col.\|.classified_body
+
+! 2021-06-29 https://app.netdata.cloud
+||fonts.googleapis.com/$stylesheet,domain=app.netdata.cloud
+
+! 2021-07-13 https://heymillennial.es
+heymillennial.es##.is-dismissible.settings-error.notice-warning.notice
+
+! 2021-07-14 https://www.midietacojea.com
+www.midietacojea.com##.ehu-bottom-fixed
+
+! 2021-08-03 https://www.muycomputerpro.com
+www.muycomputerpro.com##.BottomToTop-on.BottomToTop.rejectSecondLayer
