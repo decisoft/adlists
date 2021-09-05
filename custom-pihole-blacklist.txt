@@ -30,6 +30,13 @@ social.kobobooks.com
 kbdownload1-a.akamaihd.net
 readingservices.kobo.com
 mqtt.baintex.com
+cloud.tenda.com.cn
+api.cloud.tenda.com.cn
+download.mcafee.com
+sadownload.mcafee.com
+cloud.gti.mcafee.com
+(\.|^)incapdns\.net$
+c.sayhi.360.cn
 
 # LG specific / adapted from https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV.txt, + generic smarttv domains
 eic.cdpsvc.lgtvcommon.com
