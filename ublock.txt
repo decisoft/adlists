@@ -898,3 +898,43 @@ www.midietacojea.com##.ehu-bottom-fixed
 
 ! 2021-08-03 https://www.muycomputerpro.com
 www.muycomputerpro.com##.BottomToTop-on.BottomToTop.rejectSecondLayer
+
+! 2021-06-11 https://tiempodecanarias.com
+tiempodecanarias.com##.ng-star-inserted.body.advertise
+
+! 2021-06-19 https://pctmix1.com
+pctmix1.com##.bgshadow
+pctmix1.com##.boxintersitial
+
+! 2021-07-05 https://www.jardindeliciasfestival.com
+www.jardindeliciasfestival.com##.cookies
+
+! 2021-08-22 https://lectulandia.to
+lectulandia.to##center
+
+! 2021-08-25 https://diversascanarias.com
+diversascanarias.com##.is-dismissible.notice-warning.notice.yoast-notification
+
+! 2021-08-26 https://www.lavanguardia.com
+www.lavanguardia.com###gg-alert
+
+! 2021-09-06 https://www.enriquedans.com
+www.enriquedans.com##.cookie-notice-container
+
+! 2021-09-10 https://www.macnificos.com
+www.macnificos.com##.container.pane-node.panel-pane
+
+! 2021-09-11 https://www.bestbackups.com
+www.bestbackups.com###ulp-6oF9tCl8oYNhZNRP-overlay
+www.bestbackups.com###ulp-layer-338
+
+! 2021-09-11 https://www.technicallywizardry.com
+www.technicallywizardry.com##.mctb-bar
+
+! 2021-09-11 https://www.bestbackups.com
+www.bestbackups.com##.ulp-submit
+www.bestbackups.com##.ulp-input-field.ulp-input
+www.bestbackups.com###ulp-layer-339
+
+! 2021-09-11 
+##.cookies
