@@ -938,3 +938,23 @@ www.bestbackups.com###ulp-layer-339
 
 ! 2021-09-11 
 ##.cookies
+
+! 2021-09-23 https://teatromadrid.com
+teatromadrid.com##.fixed.r.pub
+teatromadrid.com##.pub.pub-970x90-top.pub-970x90
+teatromadrid.com##.fixed.l.pub
+
+! 2021-09-27 https://www.bioguia.com
+www.bioguia.com###slot-leaderboard1_desktop
+www.bioguia.com##.am-sticky-article-lateral-1 > .slot-loading.ams-dsk.am-slot
+www.bioguia.com##.am-sticky-article-lateral-2 > .slot-loading.ams-dsk.am-slot
+www.bioguia.com##.am-sticky-article-lateral-3 > .slot-loading.ams-dsk.am-slot
+www.bioguia.com###slot-leaderboard2_desktop
+www.bioguia.com###slot-leaderboard3_desktop
+www.bioguia.com###slot-leaderboard4_desktop
+
+! 2021-09-30 https://www.theswiftcodes.com
+www.theswiftcodes.com###tw_side_banner
+
+! 2021-10-02 https://elpais.com
+elpais.com##.ad-giga-1.ad-giga.ad
