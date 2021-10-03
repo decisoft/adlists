@@ -958,3 +958,7 @@ www.theswiftcodes.com###tw_side_banner
 
 ! 2021-10-02 https://elpais.com
 elpais.com##.ad-giga-1.ad-giga.ad
+
+podimo.com#@#.cookie__container
+podimo.com#@#.cookie__container:not(body):not(html)
+podimo.com#@#.main-footer ~ .cookie
