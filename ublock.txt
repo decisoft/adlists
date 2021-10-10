@@ -956,9 +956,11 @@ www.bioguia.com###slot-leaderboard4_desktop
 ! 2021-09-30 https://www.theswiftcodes.com
 www.theswiftcodes.com###tw_side_banner
 
-! 2021-10-02 https://elpais.com
-elpais.com##.ad-giga-1.ad-giga.ad
-
 podimo.com#@#.cookie__container
 podimo.com#@#.cookie__container:not(body):not(html)
 podimo.com#@#.main-footer ~ .cookie
+
+! 2021-10-05 https://elpais.com
+elpais.com##.ad-giga-2.ad-giga.ad
+! 2021-10-01 https://es.shein.com
+es.shein.com##.S-modal__dialog.S-modal
