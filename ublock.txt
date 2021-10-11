@@ -972,3 +972,4 @@ es.shein.com##.S-modal__dialog.S-modal
 
 ! 2021-10-11 https://www.elindependiente.com
 www.elindependiente.com###right1
+epe.es#@#[id^="div-gpt-ad"]
