@@ -962,5 +962,9 @@ podimo.com#@#.main-footer ~ .cookie
 
 ! 2021-10-05 https://elpais.com
 elpais.com##.ad-giga-2.ad-giga.ad
+
 ! 2021-10-01 https://es.shein.com
 es.shein.com##.S-modal__dialog.S-modal
+
+! 2021-10-11 https://www.elindependiente.com
+www.elindependiente.com###right1
