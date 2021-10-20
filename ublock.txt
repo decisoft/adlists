@@ -973,3 +973,12 @@ es.shein.com##.S-modal__dialog.S-modal
 ! 2021-10-11 https://www.elindependiente.com
 www.elindependiente.com###right1
 epe.es#@#[id^="div-gpt-ad"]
+
+! 2021-10-15 https://www.photopea.com
+www.photopea.com##.app.flexrow > div:nth-of-type(2)
+tienda.bananacomputer.com#@##aceptar_cookies
+tienda.bananacomputer.com#@##cookie_wrapper
+tienda.bananacomputer.com#@##cookie_text
+
+! 2021-10-20 https://store.bananacomputer.com
+@@||www.smartsuppchat.com/loader.js?$script,domain=store.bananacomputer.com
