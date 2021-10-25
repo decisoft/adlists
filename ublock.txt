@@ -982,3 +982,12 @@ tienda.bananacomputer.com#@##cookie_text
 
 ! 2021-10-20 https://store.bananacomputer.com
 @@||www.smartsuppchat.com/loader.js?$script,domain=store.bananacomputer.com
+
+! 2021-10-24 https://www.pccomponentes.com
+@@||static.landbot.io/landbot-3/landbot-3.0.0.js$script,domain=www.pccomponentes.com
+
+! 2021-10-24 https://www.epe.es
+www.epe.es###div-gpt-ad-ldb2
+
+! 2021-10-25 https://www.inverfest.com
+@@||www.inverfest.com/js/cookiesdirective/jquery.cookiesdirective.js?190729$script,domain=www.inverfest.com
