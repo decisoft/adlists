@@ -991,3 +991,32 @@ www.epe.es###div-gpt-ad-ldb2
 
 ! 2021-10-25 https://www.inverfest.com
 @@||www.inverfest.com/js/cookiesdirective/jquery.cookiesdirective.js?190729$script,domain=www.inverfest.com
+
+! 2021-10-29 https://careers.paack.co
+careers.paack.co##.tt-cookie-backdrop
+
+! 2021-11-11 https://www.businessinsider.es
+www.businessinsider.es##.xzcnc.mega-ad__BackgroundAds-sc-14qllx4-0
+
+! 2021-11-12 https://es.wallapop.com
+es.wallapop.com##div.ng-star-inserted.align-items-center.justify-content-center.d-flex.ItemCardList__slot:nth-of-type(4)
+
+! 2021-11-12 https://cronicaglobal.elespanol.com
+cronicaglobal.elespanol.com##.c-banner--desktop.c-banner--990x250.c-banner
+cronicaglobal.elespanol.com##div.c-banner--desktop.c-banner--300x600.c-banner:nth-of-type(1)
+cronicaglobal.elespanol.com##div.c-banner--desktop.c-banner--300x600.c-banner:nth-of-type(3)
+cronicaglobal.elespanol.com##.c-banner--desktop.c-banner--300x250.c-banner
+cronicaglobal.elespanol.com##.c-banner--desktop.c-banner--sticky.c-banner--300x600.c-banner
+cronicaglobal.elespanol.com##.c-banner--all.c-banner--990x250.c-banner
+
+! 2021-11-14 https://jsavargas.wordpress.com
+jsavargas.wordpress.com##.twentysixteen.left.top.native-ad-marker
+
+! 2021-11-15 https://www.perfumesclub.com
+www.perfumesclub.com##.toolbarBelleza.col-12.new-menu-level-2
+
+! 2021-11-20 https://www.inoutviajes.com
+www.inoutviajes.com##.id_publi_374.menu__1.con_publi
+
+! 2021-11-22 https://www.businessinsider.es
+www.businessinsider.es##.xzcnc.mega-ad__BackgroundAds-sc-14qllx4-0
