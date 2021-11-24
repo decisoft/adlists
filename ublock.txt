@@ -1020,3 +1020,7 @@ www.inoutviajes.com##.id_publi_374.menu__1.con_publi
 
 ! 2021-11-22 https://www.businessinsider.es
 www.businessinsider.es##.xzcnc.mega-ad__BackgroundAds-sc-14qllx4-0
+
+! 2021-11-23 https://smoda.elpais.com
+smoda.elpais.com##div.publicidad--anchogaleria:nth-of-type(6)
+smoda.elpais.com##div.publicidad--anchogaleria
