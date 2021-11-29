@@ -1024,3 +1024,14 @@ www.businessinsider.es##.xzcnc.mega-ad__BackgroundAds-sc-14qllx4-0
 ! 2021-11-23 https://smoda.elpais.com
 smoda.elpais.com##div.publicidad--anchogaleria:nth-of-type(6)
 smoda.elpais.com##div.publicidad--anchogaleria
+
+! 2021-11-24 https://www.levante-emv.com
+www.levante-emv.com##div.no-baldomero.sidebar--sticky__space
+www.levante-emv.com##._mo_recs
+www.levante-emv.com##.commercial-up-full__wrapper
+
+! 2021-11-25 https://mapdoor.com
+mapdoor.com###cookie_consent_popup_container
+
+! 2021-11-27 https://www.wizinkcenter.es
+www.wizinkcenter.es##div.global-wrap:nth-of-type(1)

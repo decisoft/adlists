@@ -37,6 +37,35 @@ sadownload.mcafee.com
 cloud.gti.mcafee.com
 (\.|^)incapdns\.net$
 c.sayhi.360.cn
+platform.mobeam.net.www.tendawifi.com
+platform.mobeam.net
+
+# Fire TV specific
+cortana-gateway.amazon.com
+api.amazonalexa.com
+avs.eu.amazonalexa.com
+aviary.amazon.de
+avs-alexa-18-eu.amazon.com
+api.eu.amazonalexa.com
+ags-ext.amazon.com
+arcus-uswest.amazon.com
+cdws.eu-west-1.amazonaws.com
+cognito-identity.us-east-1.amazonaws.com
+cz15y20kg2.execute-api.us-east-1.amazonaws.com
+dcape-na.amazon.com
+device-messaging-na.amazon.com
+device-metrics-us.amazon.com
+digprjsurvey.amazon.eu
+dp-discovery-na-ext.amazon.com
+dp-gw-na.amazon.com
+dp-rsm-prod.amazon.com
+messaging-director-us-east-1.amazon.com
+msh.amazon.co.uk
+msh.amazon.com
+eu.api.amazonvideo.com
+todo-ta-g7g.amazon.com
+tap-client-stats.s3-eu-west-1.amazonaws.com	
+prod.amazoncrl.com
 
 # LG specific / adapted from https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV.txt, + generic smarttv domains
 eic.cdpsvc.lgtvcommon.com
