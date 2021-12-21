@@ -46,6 +46,8 @@ $removeparam=utm_userid
 $removeparam=utm_viz_id
 $removeparam=yclid
 
+||www.elmundo.es^$removeparam=/^cid=/
+
 ! DPG Media analytics
 ! Used on Dutch sites
 $removeparam=dpg_source
@@ -1035,3 +1037,17 @@ mapdoor.com###cookie_consent_popup_container
 
 ! 2021-11-27 https://www.wizinkcenter.es
 www.wizinkcenter.es##div.global-wrap:nth-of-type(1)
+
+splitwise.com#@##privacy_policy:not(input)
+fintonic.com#@#.cookies
+
+! 2021-12-07 https://www.theverge.com
+www.theverge.com##.remixd-wrapper
+
+twitter.com#@#.r-10x3wzx.r-14lw9ot.css-1dbjc4n
+
+! 2021-12-18 https://okdiario.com
+okdiario.com###header > .ad-slot-ph.mega
+
+! 2021-12-21 https://www.hola.com
+www.hola.com##.ev-paywall__container
