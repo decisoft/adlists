@@ -1051,3 +1051,25 @@ okdiario.com###header > .ad-slot-ph.mega
 
 ! 2021-12-21 https://www.hola.com
 www.hola.com##.ev-paywall__container
+
+! 2022-01-25 https://www.daopick.com
+www.daopick.com##.ant-modal-mask
+
+! 2022-01-31 https://www.lavozdegalicia.es
+www.lavozdegalicia.es##.normal.roadblock.ad-megaDesktop-id.adpos
+
+! 2022-02-01 https://cadenaser.com
+cadenaser.com##.c-s > div
+
+! 2022-02-03 https://www.newtral.es
+www.newtral.es##.c-nwtpubli-desktop-sticky
+www.newtral.es###Banner_1
+www.newtral.es###Banner_2
+
+! 2022-02-07 https://saludintegral.diversascanarias.com
+saludintegral.diversascanarias.com##.notice-info.notice.cn-notice
+
+! 2022-02-08 https://cadenaser.com
+cadenaser.com##div.cnt-publi:nth-of-type(1)
+cadenaser.com##div.cnt-publi:nth-of-type(2)
+cadenaser.com##div.cnt-publi:nth-of-type(3)
