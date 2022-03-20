@@ -66,6 +66,14 @@ eu.api.amazonvideo.com
 todo-ta-g7g.amazon.com
 tap-client-stats.s3-eu-west-1.amazonaws.com	
 prod.amazoncrl.com
+platform.mobeam.net.www.tendawifi.com
+platform.mobeam.net
+kbdownload1-a.akamaihd.net
+readingservices.kobo.com
+m2.tuyaeu.com
+a3.tuyaeu.com
+h3.iot-dns.com
+a1.tuyaeu.com
 
 # LG specific / adapted from https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV.txt, + generic smarttv domains
 eic.cdpsvc.lgtvcommon.com
