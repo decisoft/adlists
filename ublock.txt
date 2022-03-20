@@ -1073,3 +1073,9 @@ saludintegral.diversascanarias.com##.notice-info.notice.cn-notice
 cadenaser.com##div.cnt-publi:nth-of-type(1)
 cadenaser.com##div.cnt-publi:nth-of-type(2)
 cadenaser.com##div.cnt-publi:nth-of-type(3)
+
+||analyticsengine.s3.amazonaws.com
+||affiliationjs.s3.amazonaws.com
+||advertising-api-eu.amazon.com
+||app.getsentry.com
+||metrics.mzstatic.com

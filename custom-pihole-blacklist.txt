@@ -74,6 +74,11 @@ m2.tuyaeu.com
 a3.tuyaeu.com
 h3.iot-dns.com
 a1.tuyaeu.com
+analyticsengine.s3.amazonaws.com
+affiliationjs.s3.amazonaws.com
+advertising-api-eu.amazon.com
+app.getsentry.com
+metrics.mzstatic.com
 
 # LG specific / adapted from https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV.txt, + generic smarttv domains
 eic.cdpsvc.lgtvcommon.com
