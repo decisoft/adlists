@@ -300,6 +300,7 @@ $removeparam=/^cid=/
 $removeparam=/^_ga/
 ||aliexpress.com^$removeparam=/^algo_pvid=/
 ||aliexpress.com^$removeparam=/^algo_exp_id=/
+@@||ine.es^$removeparam=/^cid=/
 
 
 ! Block trackers !
