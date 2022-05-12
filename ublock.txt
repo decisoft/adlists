@@ -1080,3 +1080,63 @@ cadenaser.com##div.cnt-publi:nth-of-type(3)
 ||advertising-api-eu.amazon.com
 ||app.getsentry.com
 ||metrics.mzstatic.com
+
+! 2022-02-09 https://www.forbes.com
+www.forbes.com###trustarc-banner-overlay
+www.forbes.com##.trustarc-banner-container
+www.forbes.com##.trustarc-banner-footer
+
+! 2022-02-15 https://www.puntodebreak.com
+www.puntodebreak.com##.block-block-52.banner-rwd.ads.md-block > .banner-content
+
+! 2022-02-15 https://bestproductlists.com
+bestproductlists.com##.no-gutters.p-md-2.px-0.row > .mb-2.text-center.w-100
+
+! 2022-02-17 https://okdiario.com
+okdiario.com###okd_top1_original
+
+! 2022-02-21 https://apkism.com
+apkism.com###wmg-ad-container
+
+! 2022-03-09 https://www.ovh.com
+www.ovh.com##.in.manager-cookie-policy-banner.ng-isolate-scope.fade.modal
+www.ovh.com##.in.fade.manager-cookie-policy-banner-backdrop.modal-backdrop
+
+! 2022-03-14 https://www.fayerwayer.com
+www.fayerwayer.com##.slide-down.notification-subs
+
+! 2022-03-15 http://www.dyingtt.com
+||v.shouyoumen.com/syjpc/jlcq-zbtsb-1080-420-3-3-r.gif$image
+||v.shouyoumen.com/syjpc/jlcq-zbtsb-1080-420-3-3-l.gif$image
+www.dyingtt.com###HMimageright
+www.dyingtt.com###HMimageleft
+
+! 2022-03-17 https://estore.asus.com
+estore.asus.com###cookie-policy-info-bg
+
+! 2022-03-20 https://www.studocu.com
+www.studocu.com##._63f5c4e7e31f._3182a7ef6737
+
+! 2022-05-05 https://psicologiaymente.com
+psicologiaymente.com##.md\:w-728px.md\:h-90px.md\:block.justify-center.items-center.w-320px.h-50px.flex
+
+! 2022-05-06 https://www.tennisworldes.com
+www.tennisworldes.com##.top_container > center
+www.tennisworldes.com##section > div
+
+! 2022-05-10 http://192.168.50.154:19999
+192.168.50.154##.ieZdGd.backdropContainer__Backdrop-sc-1fhdzzd-1
+
+! 2022-05-12 https://retinatendencias.com
+retinatendencias.com##.site-header__publicidad
+
+mamachico.com#@#.accept-cookie:not(body):not(html)
+mamachico.com#@#.accept-cookie:not(body):not(html):not(a):not([class*="btn"])
+mamachico.com#@#.cookie-description
+mamachico.com#@#.cookie-info:not(body):not(html)
+
+! 2022-05-12 https://mamachico.com
+@@||mamachico.com/Modules/Contrib.CookieCuttr/Styles/cookiecuttr.min.css$stylesheet,1p
+@@||mamachico.com/Modules/Contrib.CookieCuttr/scripts/jquery.cookiecuttr.min.js$script,1p
+mamachico.com#@#.cc-cookies
+mamachico.com#@#.cc-cookies:not(body):not(html)
