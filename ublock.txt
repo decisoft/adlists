@@ -1140,3 +1140,6 @@ mamachico.com#@#.cookie-info:not(body):not(html)
 @@||mamachico.com/Modules/Contrib.CookieCuttr/scripts/jquery.cookiecuttr.min.js$script,1p
 mamachico.com#@#.cc-cookies
 mamachico.com#@#.cc-cookies:not(body):not(html)
+
+newyorkburger.es#@#cookie-law-info-again
+newyorkburger.es#@##cookie-law-info-bar
