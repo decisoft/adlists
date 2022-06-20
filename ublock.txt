@@ -1143,3 +1143,10 @@ mamachico.com#@#.cc-cookies:not(body):not(html)
 
 newyorkburger.es#@#cookie-law-info-again
 newyorkburger.es#@##cookie-law-info-bar
+
+bintercanarias.com#@#.ui-widget-overlay
+bintercanarias.com#@#.ui-widget[aria-labelledby*="cookie"]
+bintercanarias.com#@#cookiesPolicy
+bintercanarias.com#@#.ui-widget[aria-labelledby*="cookie"] + .ui-widget-overlay
+bintercanarias.com#@#div[aria-labelledby="ui-dialog-title-cookiesPolicy"] ~ div.ui-widget-overlay
+bintercanarias.com#@#div[aria-labelledby="ui-dialog-title-cookiesPolicy"]
