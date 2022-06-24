@@ -1150,3 +1150,9 @@ bintercanarias.com#@#cookiesPolicy
 bintercanarias.com#@#.ui-widget[aria-labelledby*="cookie"] + .ui-widget-overlay
 bintercanarias.com#@#div[aria-labelledby="ui-dialog-title-cookiesPolicy"] ~ div.ui-widget-overlay
 bintercanarias.com#@#div[aria-labelledby="ui-dialog-title-cookiesPolicy"]
+
+www.circulobellasartes.com#@##cliSettingsPopup
+www.circulobellasartes.com#@##cookie-law-info-again
+www.circulobellasartes.com#@##cookie-law-info-bar
+www.circulobellasartes.com#@##cookie_hdr_showagain
+www.circulobellasartes.com#@##cookie-law-info-bar ~ .cli-modal-backdrop
