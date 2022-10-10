@@ -1156,3 +1156,20 @@ www.circulobellasartes.com#@##cookie-law-info-again
 www.circulobellasartes.com#@##cookie-law-info-bar
 www.circulobellasartes.com#@##cookie_hdr_showagain
 www.circulobellasartes.com#@##cookie-law-info-bar ~ .cli-modal-backdrop
+
+! 2022-02-08 https://twitter.com
+twitter.com##.r-13qz1uu.r-1f1sjgu.r-ymttw5.r-1d7fvdj.r-18u37iz.r-9hvr93.r-1m3jxhj.r-1awozwy.css-1dbjc4n
+
+! 2022-05-15 https://as.com
+as.com##.ad--ldb1.ad
+
+! 2022-05-23 https://lapalmasuites.com
+lapalmasuites.com##.lightbox-backdrop
+
+! 2022-09-03 https://www.eltiempo.es
+www.eltiempo.es##.mods-sticky-header
+
+! 2022-10-10 https://www.pillalas.com
+@@||www.pillalas.com/static/_s/js/responsive-cookie/cookies-message.css$stylesheet,domain=www.pillalas.com
+@@||www.pillalas.com/static/_s/js/responsive-cookie/cookies-message.js$script,domain=www.pillalas.com
+www.pillalas.com#@##band-cookies
